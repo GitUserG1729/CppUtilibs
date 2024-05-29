@@ -1,0 +1,154 @@
+CppUtilibs
+	by R.E.M.
+==============================
+some utility classes written by cpp.
+
+
+
+
+USAGE
+==============================
+check the related header file to get the usage of the classes.
+check "Tester.cpp" for code example for using each class.
+
+
+CLASS LIST ( IMPLEMENTED )
+==============================
+[[ algorithm ]]
+	[ BidirectionIndex ] :
+	this can be used as an O(1) implementation of set<int>  
+	when the integers are aggregate in certain range. 
+	for example, vertex set in topological graph.
+
+	[ Counter ] :
+	auto incremental function object.
+
+	[ Graph ] :
+	Geometrical Graph/Topological Graph, DirectedGraph/UndirectedGraph.
+	some basic algorithm on directed graph, such as
+	bellman-ford/dijkstra/a-star for shortest path problem,
+	and successive shortest path for min cost flow problem.
+
+	[ Knapsack ] :
+	knapsack solvers.
+
+	[ Container ] :
+	container wrappers.
+
+	[ String ] :
+	string processing algorithms.
+
+
+[[ io ]]
+	[ File ] :
+	file operations.
+
+
+[[ log ]]
+	[ Log ] :
+	make it easy to show log when debuging and 
+	avoid too much log in release version.
+
+	[ Timer ] :
+	provide interface to check if timeout in single thread procedure.
+
+	[ Trace ] :
+	record program running state and dump call stack after crash.
+
+
+[[ math ]]
+	[ Interval ] :
+	a range representation with some basic operations.
+
+	[ Math ] :
+	basic arithmetics.
+
+	[ Oscillator ] :
+	a number generator with an oscillating pattern.
+
+
+[[ random ]]
+	[ Random ] :
+	wrap a random number generator with some simple probability distrubution.
+
+	[ Sample1 ] :
+	make it possible to pick one element out of a sequence of elements 
+	by same probability without recording all of them.
+
+	[ Sample ] :
+	an online algorithm for sampling targetNum items from a data stream.
+
+
+[[ system ]]
+	[ Directory ] :
+	portable directory operations.
+
+	[ Exception ] :
+	complement common exception types in STL.
+
+	[ Madro ] :
+	some crazy mad macros.
+
+	[ Memory ] :
+	memory status reporter.
+
+	[ Semaphore ] :
+	a useful mechanism for synchronization.
+
+	[ System ] :
+	unified platform dependent macros.
+	portable shell commands.
+
+	[ Termination ] :
+	program termination control.
+
+	[ ThreadPool ] :
+	a simple thread pool with restarting, pending and stopping.
+
+
+[[ type ]]
+	[ Arr ] :
+	dynamic allocated array follows RAII idiom.
+
+	[ Convert ] :
+	convert between std::string and other type.
+
+	[ Double ] :
+	encaptured fundamental type double.
+	make it easier to compare two real numbers by tolerating some error.
+
+	[ LoopQueue ] :
+	loop queue for the cases that the max number of items in queue is known.
+
+	[ PriorityQueue ] :
+	priority queue implemented by bucket, red-black tree or heap.
+	
+	[ VectorMD ] :
+	simplify multi-dimensional vector representation.
+	
+	[ ZeroBasedConsecutiveIdMap ] :
+	a number mapping utility.
+	
+	[ CombinationMap ] :
+	mapping a combination of items to corresponding data.
+	unlike the normal maps, the key is not a string or permutation.
+	
+
+CLASS LIST ( IN THE PLAN )
+==============================
+[ Integer ] :
+ integer without precision loss.
+
+[ Rational ] :
+rational number without precision loss.
+
+[ Trie ] :
+dictionary tree.
+
+[ SuffixTree ] :
+
+
+[ AVLTree ] :
+
+
+[ RedBlackTree ] :
